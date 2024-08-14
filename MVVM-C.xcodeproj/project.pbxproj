@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		A24251582C6CB16C009EB3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251572C6CB16C009EB3B0 /* AppDelegate.swift */; };
 		A242515A2C6CB16C009EB3B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */; };
-		A242515C2C6CB16C009EB3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242515B2C6CB16C009EB3B0 /* ViewController.swift */; };
-		A242515F2C6CB16C009EB3B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A242515E2C6CB16C009EB3B0 /* Base */; };
+		A242515C2C6CB16C009EB3B0 /* AirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242515B2C6CB16C009EB3B0 /* AirportViewController.swift */; };
 		A24251612C6CB16D009EB3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24251602C6CB16D009EB3B0 /* Assets.xcassets */; };
 		A24251642C6CB16D009EB3B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A24251632C6CB16D009EB3B0 /* Base */; };
+		A242516C2C6CB4F1009EB3B0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242516B2C6CB4F1009EB3B0 /* Airport.swift */; };
+		A242516E2C6CB54A009EB3B0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242516D2C6CB54A009EB3B0 /* NetworkService.swift */; };
+		A24251712C6CB55D009EB3B0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A24251702C6CB55D009EB3B0 /* SnapKit */; };
+		A24251742C6CB56A009EB3B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A24251732C6CB56A009EB3B0 /* Alamofire */; };
+		A24251762C6CB589009EB3B0 /* AirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251752C6CB589009EB3B0 /* AirportViewModel.swift */; };
+		A24251782C6CB5A4009EB3B0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251772C6CB5A4009EB3B0 /* AppCoordinator.swift */; };
+		A25CE51B2C6CD02D0090AE9D /* AirportDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */; };
+		A25CE51D2C6CD05B0090AE9D /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CE51C2C6CD05B0090AE9D /* AirportDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A24251542C6CB16C009EB3B0 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24251572C6CB16C009EB3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A242515B2C6CB16C009EB3B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A242515E2C6CB16C009EB3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A242515B2C6CB16C009EB3B0 /* AirportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewController.swift; sourceTree = "<group>"; };
 		A24251602C6CB16D009EB3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A24251632C6CB16D009EB3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A24251652C6CB16D009EB3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A242516B2C6CB4F1009EB3B0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		A242516D2C6CB54A009EB3B0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A24251752C6CB589009EB3B0 /* AirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewModel.swift; sourceTree = "<group>"; };
+		A24251772C6CB5A4009EB3B0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModel.swift; sourceTree = "<group>"; };
+		A25CE51C2C6CD05B0090AE9D /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24251712C6CB55D009EB3B0 /* SnapKit in Frameworks */,
+				A24251742C6CB56A009EB3B0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,68 @@
 		A24251562C6CB16C009EB3B0 /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
-				A24251572C6CB16C009EB3B0 /* AppDelegate.swift */,
-				A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */,
-				A242515B2C6CB16C009EB3B0 /* ViewController.swift */,
-				A242515D2C6CB16C009EB3B0 /* Main.storyboard */,
-				A24251602C6CB16D009EB3B0 /* Assets.xcassets */,
-				A24251622C6CB16D009EB3B0 /* LaunchScreen.storyboard */,
+				A242517A2C6CB9C8009EB3B0 /* Model */,
+				A242517B2C6CB9D1009EB3B0 /* View */,
+				A242517C2C6CB9DA009EB3B0 /* ViewModel */,
+				A242517E2C6CB9EE009EB3B0 /* Coordinator */,
+				A242517D2C6CB9E5009EB3B0 /* Networking */,
+				A24251792C6CB9B5009EB3B0 /* Resources */,
 				A24251652C6CB16D009EB3B0 /* Info.plist */,
 			);
 			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
+		A24251792C6CB9B5009EB3B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A24251602C6CB16D009EB3B0 /* Assets.xcassets */,
+				A24251622C6CB16D009EB3B0 /* LaunchScreen.storyboard */,
+				A24251572C6CB16C009EB3B0 /* AppDelegate.swift */,
+				A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A242517A2C6CB9C8009EB3B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A242516B2C6CB4F1009EB3B0 /* Airport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A242517B2C6CB9D1009EB3B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A242515B2C6CB16C009EB3B0 /* AirportViewController.swift */,
+				A25CE51C2C6CD05B0090AE9D /* AirportDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A242517C2C6CB9DA009EB3B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A24251752C6CB589009EB3B0 /* AirportViewModel.swift */,
+				A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A242517D2C6CB9E5009EB3B0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A242516D2C6CB54A009EB3B0 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A242517E2C6CB9EE009EB3B0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A24251772C6CB5A4009EB3B0 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +150,10 @@
 			dependencies = (
 			);
 			name = "MVVM-C";
+			packageProductDependencies = (
+				A24251702C6CB55D009EB3B0 /* SnapKit */,
+				A24251732C6CB56A009EB3B0 /* Alamofire */,
+			);
 			productName = "MVVM-C";
 			productReference = A24251542C6CB16C009EB3B0 /* MVVM-C.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,10 @@
 				Base,
 			);
 			mainGroup = A242514B2C6CB16C009EB3B0;
+			packageReferences = (
+				A242516F2C6CB55D009EB3B0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A24251722C6CB56A009EB3B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A24251552C6CB16C009EB3B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +202,6 @@
 			files = (
 				A24251612C6CB16D009EB3B0 /* Assets.xcassets in Resources */,
 				A24251642C6CB16D009EB3B0 /* Base in Resources */,
-				A242515F2C6CB16C009EB3B0 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +212,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A242515C2C6CB16C009EB3B0 /* ViewController.swift in Sources */,
+				A242516E2C6CB54A009EB3B0 /* NetworkService.swift in Sources */,
+				A242515C2C6CB16C009EB3B0 /* AirportViewController.swift in Sources */,
+				A24251762C6CB589009EB3B0 /* AirportViewModel.swift in Sources */,
+				A242516C2C6CB4F1009EB3B0 /* Airport.swift in Sources */,
 				A24251582C6CB16C009EB3B0 /* AppDelegate.swift in Sources */,
+				A25CE51D2C6CD05B0090AE9D /* AirportDetailViewController.swift in Sources */,
 				A242515A2C6CB16C009EB3B0 /* SceneDelegate.swift in Sources */,
+				A24251782C6CB5A4009EB3B0 /* AppCoordinator.swift in Sources */,
+				A25CE51B2C6CD02D0090AE9D /* AirportDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A242515D2C6CB16C009EB3B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A242515E2C6CB16C009EB3B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A24251622C6CB16D009EB3B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +369,6 @@
 				INFOPLIST_FILE = "MVVM-C/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +396,6 @@
 				INFOPLIST_FILE = "MVVM-C/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +433,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A242516F2C6CB55D009EB3B0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A24251722C6CB56A009EB3B0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A24251702C6CB55D009EB3B0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A242516F2C6CB55D009EB3B0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A24251732C6CB56A009EB3B0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A24251722C6CB56A009EB3B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A242514C2C6CB16C009EB3B0 /* Project object */;
 }
