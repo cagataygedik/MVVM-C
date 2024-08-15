@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A21183322C6DEA76004332C2 /* AirportListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21183312C6DEA76004332C2 /* AirportListCoordinator.swift */; };
 		A21183342C6DEA92004332C2 /* AirportDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21183332C6DEA92004332C2 /* AirportDetailCoordinator.swift */; };
+		A21183372C6DF605004332C2 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21183362C6DF605004332C2 /* APIConstants.swift */; };
 		A24251582C6CB16C009EB3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251572C6CB16C009EB3B0 /* AppDelegate.swift */; };
 		A242515A2C6CB16C009EB3B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */; };
 		A242515C2C6CB16C009EB3B0 /* AirportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242515B2C6CB16C009EB3B0 /* AirportListViewController.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		A21183312C6DEA76004332C2 /* AirportListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListCoordinator.swift; sourceTree = "<group>"; };
 		A21183332C6DEA92004332C2 /* AirportDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailCoordinator.swift; sourceTree = "<group>"; };
+		A21183362C6DF605004332C2 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		A24251542C6CB16C009EB3B0 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24251572C6CB16C009EB3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24251592C6CB16C009EB3B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21183352C6DF5E9004332C2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		A242514B2C6CB16C009EB3B0 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +88,7 @@
 				A242517C2C6CB9DA009EB3B0 /* ViewModel */,
 				A242517E2C6CB9EE009EB3B0 /* Coordinator */,
 				A242517D2C6CB9E5009EB3B0 /* Networking */,
+				A21183352C6DF5E9004332C2 /* Constants */,
 				A24251792C6CB9B5009EB3B0 /* Resources */,
 				A24251652C6CB16D009EB3B0 /* Info.plist */,
 			);
@@ -125,6 +135,7 @@
 		A242517D2C6CB9E5009EB3B0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A21183362C6DF605004332C2 /* APIConstants.swift */,
 				A242516D2C6CB54A009EB3B0 /* NetworkService.swift */,
 			);
 			path = Networking;
@@ -229,6 +240,7 @@
 				A21183322C6DEA76004332C2 /* AirportListCoordinator.swift in Sources */,
 				A25CE51B2C6CD02D0090AE9D /* AirportDetailViewModel.swift in Sources */,
 				A21183342C6DEA92004332C2 /* AirportDetailCoordinator.swift in Sources */,
+				A21183372C6DF605004332C2 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

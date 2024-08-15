@@ -8,17 +8,15 @@
 import Alamofire
 
 protocol NetworkServiceProtocol {
-    func fetchAirports(completion: @escaping (Result<[Airport], Error>) -> Void)
+    func request<T: Decodable>(endpoint: APIEndpoint, completion: @escaping (Result<T, Error>) -> Void)
 }
 
 class NetworkService: NetworkServiceProtocol {
-    func fetchAirports(completion: @escaping (Result<[Airport], Error>) -> Void) {
-        let url = "https://freetestapi.com/api/v1/airports"
-        
-        AF.request(url).responseDecodable(of: [Airport].self) { response in
+    func request<T>(endpoint: APIEndpoint, completion: @escaping (Result<T, any Error>) -> Void) where T : Decodable {
+        AF.request(endpoint.url).responseDecodable(of: T.self) { response in
             switch response.result {
-            case .success(let airports):
-                completion(.success(airports))
+            case .success(let data):
+                completion(.success(data))
             case .failure(let error):
                 completion(.failure(error))
             }

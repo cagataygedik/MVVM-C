@@ -18,13 +18,13 @@ class AirportViewModel {
     }
     
     func fetchAirports() {
-        networkService.fetchAirports { [weak self] result in
+        networkService.request(endpoint: .airports) { [weak self] (result: Result<[Airport], Error>) in
             switch result {
             case .success(let airports):
                 self?.airports = airports
                 self?.updateUI?()
             case .failure(let error):
-                print("Error fetching airports: \(error)")
+                print("error: \(error)")
             }
         }
     }
