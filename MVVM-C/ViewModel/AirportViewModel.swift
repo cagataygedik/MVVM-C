@@ -9,14 +9,12 @@ import Foundation
 
 class AirportViewModel {
     private let networkService: NetworkServiceProtocol
-    private weak var coordinator: AppCoordinator?
     
     var airports: [Airport] = []
     var updateUI: (() -> Void)?
     
-    init(networkService: NetworkServiceProtocol, coordinator: AppCoordinator) {
+    init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
-        self.coordinator = coordinator
     }
     
     func fetchAirports() {
@@ -33,11 +31,6 @@ class AirportViewModel {
     
     func getAirport(at index: Int) -> Airport {
         return airports[index]
-    }
-    
-    func didSelectAirport(at index: Int) {
-        let airport = getAirport(at: index)
-        coordinator?.showAirportDetail(airportName: airport.name)
     }
 }
 

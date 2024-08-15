@@ -22,15 +22,20 @@ class AirportDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewController()
+        setupUI()
+    }
+    
+    private func setupViewController() {
         view.backgroundColor = .white
         title = "Airport Detail"
-        setupUI()
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func setupUI() {
         airportNameLabel.text = viewModel.airportName
         airportNameLabel.textAlignment = .center
-        airportNameLabel.font = UIFont.systemFont(ofSize: 24)
+        airportNameLabel.font = UIFont.systemFont(ofSize: 16)
         
         view.addSubview(airportNameLabel)
         

@@ -8,12 +8,14 @@
 import UIKit
 import SnapKit
 
-class AirportViewController: UIViewController {
+class AirportListViewController: UIViewController {
     private let viewModel: AirportViewModel
+    private let coordinator: AirportListCoordinator
     private let tableView = UITableView()
     
-    init(viewModel: AirportViewModel) {
+    init(viewModel: AirportViewModel, coordinator: AirportListCoordinator) {
         self.viewModel = viewModel
+        self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -23,17 +25,18 @@ class AirportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupViewController()
         setupUI()
         bindViewModel()
-        
-        viewModel.fetchAirports()
+    }
+    
+    private func setupViewController() {
+        view.backgroundColor = .white
+        title = "Airports"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
-        title = "Airports"
-        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -48,10 +51,11 @@ class AirportViewController: UIViewController {
         viewModel.updateUI = { [weak self] in
             self?.tableView.reloadData()
         }
+        viewModel.fetchAirports()
     }
 }
 
-extension AirportViewController: UITableViewDataSource {
+extension AirportListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.airports.count
     }
@@ -64,9 +68,10 @@ extension AirportViewController: UITableViewDataSource {
     }
 }
 
-extension AirportViewController: UITableViewDelegate {
+extension AirportListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectAirport(at: indexPath.row)
+        let airport = viewModel.getAirport(at: indexPath.row)
+        coordinator.showAirportDetail(airportName: airport.name)
     }
 }
 
