@@ -9,11 +9,11 @@ import UIKit
 import SnapKit
 
 class AirportListViewController: UIViewController {
-    private let viewModel: AirportViewModel
+    private let viewModel: AirportListViewModel
     private let coordinator: AirportListCoordinator
     private let tableView = UITableView()
     
-    init(viewModel: AirportViewModel, coordinator: AirportListCoordinator) {
+    init(viewModel: AirportListViewModel, coordinator: AirportListCoordinator) {
         self.viewModel = viewModel
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)

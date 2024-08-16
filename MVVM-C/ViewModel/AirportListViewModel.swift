@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AirportViewModel {
+class AirportListViewModel {
     private let networkService: NetworkServiceProtocol
     
     var airports: [Airport] = []

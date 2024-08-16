@@ -19,11 +19,24 @@
 		A242516E2C6CB54A009EB3B0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242516D2C6CB54A009EB3B0 /* NetworkService.swift */; };
 		A24251712C6CB55D009EB3B0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A24251702C6CB55D009EB3B0 /* SnapKit */; };
 		A24251742C6CB56A009EB3B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A24251732C6CB56A009EB3B0 /* Alamofire */; };
-		A24251762C6CB589009EB3B0 /* AirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251752C6CB589009EB3B0 /* AirportViewModel.swift */; };
+		A24251762C6CB589009EB3B0 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251752C6CB589009EB3B0 /* AirportListViewModel.swift */; };
 		A24251782C6CB5A4009EB3B0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24251772C6CB5A4009EB3B0 /* MainCoordinator.swift */; };
 		A25CE51B2C6CD02D0090AE9D /* AirportDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */; };
 		A25CE51D2C6CD05B0090AE9D /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25CE51C2C6CD05B0090AE9D /* AirportDetailViewController.swift */; };
+		A29673192C6F62A800A1B9F9 /* AirportListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29673182C6F62A800A1B9F9 /* AirportListViewModelTests.swift */; };
+		A296731B2C6F63D400A1B9F9 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296731A2C6F63D400A1B9F9 /* MockNetworkService.swift */; };
+		A296731E2C6F66FF00A1B9F9 /* AirportDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A296731D2C6F66FF00A1B9F9 /* AirportDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A29673132C6F627400A1B9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A242514C2C6CB16C009EB3B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24251532C6CB16C009EB3B0;
+			remoteInfo = "MVVM-C";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A21183312C6DEA76004332C2 /* AirportListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListCoordinator.swift; sourceTree = "<group>"; };
@@ -38,10 +51,14 @@
 		A24251652C6CB16D009EB3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A242516B2C6CB4F1009EB3B0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		A242516D2C6CB54A009EB3B0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		A24251752C6CB589009EB3B0 /* AirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewModel.swift; sourceTree = "<group>"; };
+		A24251752C6CB589009EB3B0 /* AirportListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
 		A24251772C6CB5A4009EB3B0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModel.swift; sourceTree = "<group>"; };
 		A25CE51C2C6CD05B0090AE9D /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
+		A296730F2C6F627400A1B9F9 /* MVVM-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29673182C6F62A800A1B9F9 /* AirportListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModelTests.swift; sourceTree = "<group>"; };
+		A296731A2C6F63D400A1B9F9 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		A296731D2C6F66FF00A1B9F9 /* AirportDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,13 @@
 			files = (
 				A24251712C6CB55D009EB3B0 /* SnapKit in Frameworks */,
 				A24251742C6CB56A009EB3B0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A296730C2C6F627400A1B9F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A24251562C6CB16C009EB3B0 /* MVVM-C */,
+				A29673102C6F627400A1B9F9 /* MVVM-CTests */,
 				A24251552C6CB16C009EB3B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A24251542C6CB16C009EB3B0 /* MVVM-C.app */,
+				A296730F2C6F627400A1B9F9 /* MVVM-CTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +152,7 @@
 		A242517C2C6CB9DA009EB3B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A24251752C6CB589009EB3B0 /* AirportViewModel.swift */,
+				A24251752C6CB589009EB3B0 /* AirportListViewModel.swift */,
 				A25CE51A2C6CD02D0090AE9D /* AirportDetailViewModel.swift */,
 			);
 			path = ViewModel;
@@ -149,6 +175,24 @@
 				A21183332C6DEA92004332C2 /* AirportDetailCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A29673102C6F627400A1B9F9 /* MVVM-CTests */ = {
+			isa = PBXGroup;
+			children = (
+				A296731C2C6F66DD00A1B9F9 /* ViewModelTests */,
+				A296731A2C6F63D400A1B9F9 /* MockNetworkService.swift */,
+			);
+			path = "MVVM-CTests";
+			sourceTree = "<group>";
+		};
+		A296731C2C6F66DD00A1B9F9 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A29673182C6F62A800A1B9F9 /* AirportListViewModelTests.swift */,
+				A296731D2C6F66FF00A1B9F9 /* AirportDetailViewModelTests.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +219,24 @@
 			productReference = A24251542C6CB16C009EB3B0 /* MVVM-C.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A296730E2C6F627400A1B9F9 /* MVVM-CTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29673172C6F627400A1B9F9 /* Build configuration list for PBXNativeTarget "MVVM-CTests" */;
+			buildPhases = (
+				A296730B2C6F627400A1B9F9 /* Sources */,
+				A296730C2C6F627400A1B9F9 /* Frameworks */,
+				A296730D2C6F627400A1B9F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A29673142C6F627400A1B9F9 /* PBXTargetDependency */,
+			);
+			name = "MVVM-CTests";
+			productName = "MVVM-CTests";
+			productReference = A296730F2C6F627400A1B9F9 /* MVVM-CTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +249,10 @@
 				TargetAttributes = {
 					A24251532C6CB16C009EB3B0 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					A296730E2C6F627400A1B9F9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A24251532C6CB16C009EB3B0;
 					};
 				};
 			};
@@ -208,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				A24251532C6CB16C009EB3B0 /* MVVM-C */,
+				A296730E2C6F627400A1B9F9 /* MVVM-CTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +289,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A296730D2C6F627400A1B9F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,7 +305,7 @@
 			files = (
 				A242516E2C6CB54A009EB3B0 /* NetworkService.swift in Sources */,
 				A242515C2C6CB16C009EB3B0 /* AirportListViewController.swift in Sources */,
-				A24251762C6CB589009EB3B0 /* AirportViewModel.swift in Sources */,
+				A24251762C6CB589009EB3B0 /* AirportListViewModel.swift in Sources */,
 				A242516C2C6CB4F1009EB3B0 /* Airport.swift in Sources */,
 				A24251582C6CB16C009EB3B0 /* AppDelegate.swift in Sources */,
 				A25CE51D2C6CD05B0090AE9D /* AirportDetailViewController.swift in Sources */,
@@ -244,7 +318,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A296730B2C6F627400A1B9F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A296731B2C6F63D400A1B9F9 /* MockNetworkService.swift in Sources */,
+				A296731E2C6F66FF00A1B9F9 /* AirportDetailViewModelTests.swift in Sources */,
+				A29673192C6F62A800A1B9F9 /* AirportListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A29673142C6F627400A1B9F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24251532C6CB16C009EB3B0 /* MVVM-C */;
+			targetProxy = A29673132C6F627400A1B9F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A24251622C6CB16D009EB3B0 /* LaunchScreen.storyboard */ = {
@@ -431,6 +523,42 @@
 			};
 			name = Release;
 		};
+		A29673152C6F627400A1B9F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79CS75S5DL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.celilcagataygedik.MVVM-CTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-C";
+			};
+			name = Debug;
+		};
+		A29673162C6F627400A1B9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79CS75S5DL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.celilcagataygedik.MVVM-CTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM-C";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,6 +576,15 @@
 			buildConfigurations = (
 				A24251692C6CB16D009EB3B0 /* Debug */,
 				A242516A2C6CB16D009EB3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29673172C6F627400A1B9F9 /* Build configuration list for PBXNativeTarget "MVVM-CTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29673152C6F627400A1B9F9 /* Debug */,
+				A29673162C6F627400A1B9F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

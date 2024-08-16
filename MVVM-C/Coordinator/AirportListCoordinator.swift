@@ -16,7 +16,7 @@ class AirportListCoordinator {
     
     func start() {
         let networkService = NetworkService()
-        let viewModel = AirportViewModel(networkService: networkService)
+        let viewModel = AirportListViewModel(networkService: networkService)
         let airportListViewController = AirportListViewController(viewModel: viewModel, coordinator: self)
         navigationController.setViewControllers([airportListViewController], animated: false)
     }
