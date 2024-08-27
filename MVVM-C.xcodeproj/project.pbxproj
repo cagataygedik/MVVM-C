@@ -81,13 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A21183352C6DF5E9004332C2 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		A242514B2C6CB16C009EB3B0 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +107,6 @@
 				A242517C2C6CB9DA009EB3B0 /* ViewModel */,
 				A242517E2C6CB9EE009EB3B0 /* Coordinator */,
 				A242517D2C6CB9E5009EB3B0 /* Networking */,
-				A21183352C6DF5E9004332C2 /* Constants */,
 				A24251792C6CB9B5009EB3B0 /* Resources */,
 				A24251652C6CB16D009EB3B0 /* Info.plist */,
 			);
